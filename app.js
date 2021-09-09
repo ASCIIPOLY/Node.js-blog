@@ -41,7 +41,7 @@ app.use((req, res, next) => {
 
 app.use(fileUpload())
 app.use(express.static('public'))
-// app.use(methodOverride('_method'))
+app.use(methodOverride('_method'))
 
 
 
